@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<head>
+  <link href="/normalize.css" rel="stylesheet">
+  <style>
+    header {
+      text-align: center;
+      background: url('https://robinhoskyns.files.wordpress.com/2014/02/rhoskyns_140214_00100.jpg');
+      background-size: cover;
+      color: white;
+    }
+    a {
+      color: white;
+    }
+    h1 {
+      font-size: 70px;
+    }
+    .img-circle {
+    border-radius: 50%;
+    }
+    #profilepic {
+      width: 200;
+      margin: 40px 0px 0px 0px;
+      border: 7px solid white;
+      border-radius: 20px;
+    }
+    #post {
+    width: 500px;
+    display: block;
+    margin: auto;
+}
+    ul {
+      padding: 10px;
+      background: rgba(0,0,0,1);
+    }
+    li {
+      display: inline;
+      padding: 0px 10px 0px 10px;
+    }
+    article {
+      max-width: 500px;
+      margin: 0 auto;
+      padding: 0px 10px 0px 10px;
+    }
+    button {
+      margin: 10px 0px 10px 0px;
+    }
+    @media (max-width: 500px) {
+      h1 {
+        font-size: 36px;
+        padding: 5px;
+      }
+      li {
+        padding: 5px;
+        display: block;
+      }
+    }
+  </style>
+</head>
+<body>
+  <header>
+    <img id="profilepic" src="https://i.pinimg.com/736x/bb/48/06/bb480606653355911c1175b8c979ae62--nom-nom-chipmunks.jpg">
+    <h1>Rate My Squirrel</h1>
+    <p>for people who just really freakin' love squirrels</p>
+    <ul>
+      <li><a href="#">Upload Your Squirrel</a></li>
+      <li><a href="#">Most Loved Squirrels</a></li>
+      <li><a href="#">Least Loved Squirrels</a></li>
+    </ul>
+  </header>
+  <article>
+    <h2>thoughtful squirrel</h2>
+    <p>agrees that Linda in Marketing has been just awful to you today, and wants to make you a cuppa and hear all about it</p>
+    <img id="post" src="http://wallup.net/wp-content/uploads/2014/11/squirrel-funny-face-748x468.jpg">
+    <button>love</button>
+  </article>
+  <article>
+    <h2>shocked squirrel</h2>
+    <p>is really mad that you just spoiled Game of Thrones and is going to tell you the ending to Westworld as revenge</p>
+    <img id="post" src="http://i.imgur.com/9aLIveF.jpg">
+    <button>love</button>
+  </article>
+  <article>
+    <h2>ball 'o' squirrel</h2>
+    <p>has just remembered drunk sexting their ex last night and is regretting that tequila exists</p>
+    <img id="post" src="http://www.gololz.com/wp-content/uploads/2012/02/squirrel-funny-pose.jpg">
+    <button>love</button>
+  </article>
+  <script>
+    $("button").on("click", function() {
+      alert("Clicked!");
+    });
+  </script>
+</body>
